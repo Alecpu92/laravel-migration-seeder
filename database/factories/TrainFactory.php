@@ -21,3 +21,13 @@ class TrainFactory extends Factory
         ];
     }
 }
+
+$table ->string('agency');
+$table ->string('departure_station', 36);
+$table ->string('arrival_station', 36);
+$table ->integer('departure_time');
+$table ->integer('arrival_time');
+$table ->string('train_code');
+$table ->integer('number_carriages');
+$table ->boolean('in_time');
+$table ->boolean('deleted');
