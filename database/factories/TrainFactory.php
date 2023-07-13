@@ -17,7 +17,15 @@ class TrainFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'agency' => fake() -> agency(),
+            'departure_station' => fake() -> departure_station() ,
+            'arrival_station' => fake() -> arrival_station() ,
+            'departure_time' => fake() -> departure_time() ,
+            'arrival_time' => fake() -> arrival_time() ,
+            'train_code' => fake() -> train_code() ,
+            'number_carriages' => fake() -> numberBetween(1,50) ('#########') ,
+            'in_time' => fake() -> boolean () ,
+            'deleted' => fake() -> boolean ()
         ];
     }
 }
